@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.uploadpic.comment.CommentActivity">
+    <ListView
+        android:id="@+id/commentlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_above="@+id/llcoment"
+        android:divider="@null">
+
+    </ListView>
+
+<LinearLayout
+    android:id="@+id/llcoment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:weightSum="9">
+    <EditText
+        android:id="@+id/editcomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:background="#fff"
+        android:minHeight="50dp"/>
+    <ImageButton
+        android:id="@+id/sent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="8"
+        android:background="#fff"
+        android:src="@drawable/sent"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>
+
+
+</RelativeLayout>

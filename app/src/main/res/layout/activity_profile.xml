@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdede"
+    tools:context="com.example.lenovo.uploadpic.profile.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dfdede">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profilepic" />
+
+        <ImageButton
+            android:id="@+id/selectprfpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            android:background="@drawable/userprofileshape"
+            android:layout_marginBottom="17dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_alignBottom="@+id/profile"
+            android:layout_alignRight="@+id/profile"
+            android:layout_alignEnd="@+id/profile" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="UserName"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/editname"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:src="@drawable/pencil"
+            android:background="#fff"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7">
+
+        <TextView
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="UserEmail"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/editemail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:src="@drawable/pencil"
+            android:background="#fff"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7">
+
+    <TextView
+            android:id="@+id/userphno"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Userphno"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/editphno"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:src="@drawable/pencil"
+            android:background="#fff"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

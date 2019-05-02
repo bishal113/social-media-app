@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.uploadpic.profile.EditprofileActivity"
+    android:layout_marginTop="10dp">
+    
+    <EditText
+        android:id="@+id/nameedit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/emailedit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/phnoedit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/cancelbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cancel"
+            android:background="#efeeee"/>
+        <Button
+            android:id="@+id/okbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ok"
+            android:background="#efeeee"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
